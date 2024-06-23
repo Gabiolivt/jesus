@@ -26,6 +26,13 @@ public class FormLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_form_login);
+        MoverEntrar=findViewById(R.id.btSobre);
+        MoverSobre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(FormLogin.this, FormSobre.class);
+            }
+        });
         MoverEntrar=findViewById(R.id.btEntrar);
         MoverEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
