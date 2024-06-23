@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">JESUS</string>
+    <string name="entrar">Entrar</string>
+    <string name="title_cadastro">Cadastro</string>
+    <string name="text_cadastro">Não tem conta? Cadastra-se aqui!</string>
+</resources>
