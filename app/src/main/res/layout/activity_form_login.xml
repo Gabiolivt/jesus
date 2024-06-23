@@ -45,6 +45,7 @@
         app:layout_constraintTop_toBottomOf="@id/edit_email" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btEntrar"
         style="@style/Button"
         android:text="@string/entrar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,5 +75,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/progressbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSobre"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:text="Sobre a loja"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_tela_cadastrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

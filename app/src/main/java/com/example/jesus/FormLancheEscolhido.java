@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,43 +11,25 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.text.Normalizer;
-
-public class FormLogin extends AppCompatActivity {
-
-    private TextView text_tela_cadastrar;
-    private Button MoverEntrar;
-
-    private Button MoverSobre;
+public class FormLancheEscolhido extends AppCompatActivity {
+    private Button MoverConfirmar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_form_login);
-        MoverEntrar=findViewById(R.id.btEntrar);
-        MoverEntrar.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_form_lanche_escolhido);
+        MoverConfirmar=findViewById(R.id.btConfirmar);
+        MoverConfirmar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(FormLogin.this, FormLanche.class);
+                Intent intent= new Intent(FormLancheEscolhido.this, PedidoSucesso.class);
             }
         });
-        IniciarComponents();
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        text_tela_cadastrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(FormLogin.this,FormCadastro.class);
-                startActivity(intent);
-            }
-        });
-    }
-    private void IniciarComponents(){
-        text_tela_cadastrar = findViewById(R.id.text_tela_cadastrar);
-
     }
 }
