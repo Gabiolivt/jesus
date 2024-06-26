@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".FormCadastro">
-    
+
     <TextView
         android:id="@+id/title_cadastro"
         android:layout_width="wrap_content"
@@ -21,13 +21,13 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="100dp"
         />
+
     <View
         android:id="@+id/containerComponents"
         style="@style/ContainerComponents"
-        app:layout_constraintTop_toBottomOf="@id/title_cadastro"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_cadastro" />
     <EditText
         android:id="@+id/edit_nome"
         style="@style/Edit_Text"
@@ -61,56 +61,59 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"
         style="@style/Button"
-        android:layout_marginTop="176dp"
-        android:text="Cadastrar"
-        android:onClick="Cadastro_Sucesso"
+        android:layout_marginTop="14dp"
+        android:onClick="EfetuarCadastro"
+        android:text="@string/cadastro_efetuado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/containerComponents" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <RadioButton
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="278dp"
         android:text="Feminino"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintTop_toTopOf="@+id/containerComponents"
+        app:layout_constraintVertical_bias="0.0" />
 
     <RadioButton
         android:id="@+id/radioButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="Masculino"
-        android:textSize="20dp"
         android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents"
+        app:layout_constraintVertical_bias="0.018" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:text="Aceito termos e condições"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/termos_condicoes"
         android:textColor="@color/white"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioButton"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

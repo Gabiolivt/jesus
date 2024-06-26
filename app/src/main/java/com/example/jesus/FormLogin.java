@@ -15,9 +15,6 @@ import androidx.core.view.WindowInsetsCompat;
 import java.text.Normalizer;
 
 public class FormLogin extends AppCompatActivity {
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,8 +37,12 @@ public class FormLogin extends AppCompatActivity {
         Intent intent=new Intent(FormLogin.this, FormLanche.class);
         startActivity(intent);
     }
+    public void FormCastro(View view) {
+        Intent intent=new Intent(FormLogin.this, FormCadastro.class);
+        startActivity(intent);
+    }
 
-    public void Cadastro(View view) {
+    public void FormCC(View view) {
         Intent intent=new Intent(FormLogin.this, FormCadastro.class);
         startActivity(intent);
     }

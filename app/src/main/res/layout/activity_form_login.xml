@@ -53,32 +53,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_senha" />
 
-    <ProgressBar
-        android:id="@+id/progressbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:visibility="invisible"
-        app:layout_constraintTop_toBottomOf="@id/containerComponents" />
 
-
-    <Button
-        android:id="@+id/btCadastro"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCC"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        style="@style/Button"
         android:text="Cadastra-se"
-        android:textColor="@color/white"
-        android:textSize="15sp"
+        android:onClick="FormCC"
         android:backgroundTint="@color/verde2"
-        android:textStyle="bold"
-        android:onClick="Cadastro"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/progressbar" />
+        app:layout_constraintTop_toBottomOf="@id/btEntrar"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btSobre"
@@ -87,7 +75,7 @@
         android:text="Sobre a loja"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btCadastro" />
+        app:layout_constraintTop_toBottomOf="@id/btCC" />
 
 
 
