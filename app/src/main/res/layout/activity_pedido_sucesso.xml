@@ -38,6 +38,7 @@
         style="@style/Button"
         android:layout_marginTop="168dp"
         android:text="Voltar"
+        android:onClick="FormLanche"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo_suceso" />

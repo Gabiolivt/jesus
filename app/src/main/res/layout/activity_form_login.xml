@@ -47,6 +47,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btEntrar"
         style="@style/Button"
+        android:onClick="FormLanche"
         android:text="@string/entrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,30 +63,32 @@
         android:visibility="invisible"
         app:layout_constraintTop_toBottomOf="@id/containerComponents" />
 
-    <TextView
-        android:id="@+id/text_tela_cadastrar"
+
+    <Button
+        android:id="@+id/btCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"
-        android:text="@string/text_cadastro"
+        android:layout_marginTop="10dp"
+        android:text="Cadastra-se"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="15sp"
+        android:backgroundTint="@color/verde2"
         android:textStyle="bold"
+        android:onClick="Cadastro"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/progressbar" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btSobre"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="72dp"
+        style="@style/Button"
+        android:onClick="FormSobre"
         android:text="Sobre a loja"
-        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_tela_cadastrar" />
+        app:layout_constraintTop_toBottomOf="@id/btCadastro" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,15 +8,16 @@
     android:background="@drawable/background"
     tools:context=".FormLanche">
 
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/podrao1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/hotdog"
@@ -151,6 +152,7 @@
         android:layout_height="83dp"
         android:layout_marginTop="60dp"
         android:text="Selecionar"
+        android:onClick="FormLancheEscolhido"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.841"
