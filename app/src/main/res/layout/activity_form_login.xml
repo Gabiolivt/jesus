@@ -58,7 +58,7 @@
         android:id="@+id/btCC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Button"
+        style="@style/Edit_Text"
         android:text="Cadastra-se"
         android:onClick="FormCC"
         android:backgroundTint="@color/verde2"
@@ -70,7 +70,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btSobre"
-        style="@style/Button"
+        style="@style/Edit_Text"
         android:onClick="FormSobre"
         android:text="Sobre a loja"
         app:layout_constraintEnd_toEndOf="parent"
